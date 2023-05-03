@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    color: black;
+    line-height: 1.6;
+    font-family: 'Quicksand', sans-serif;
+    padding: 0 1.5em;
+}
+
+html {
+    height: 100%;
+}
+
+ol,
+ul {
+    padding-left: 0;
+}
+
+
+/*HEADER*/
+.nav-link{
+    margin: 5px;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .show>.nav-link {
+    color: red;
+}
+
+.nav-link:hover {
+    color: red;
+    transition: 0.6s ease;
+    transform: scale(1.2);
+}
+
+.dropdown-menu {
+    --bs-dropdown-link-active-bg: rgba(132, 0, 255, 0.432);
+}
+
+.dropdown-item:hover {
+    color: red;
+    transition: 0.5s ease;
+}
+
+.navbar-brand{
+    cursor: pointer;
+    display: flex;
+}
+
+.navbar-brand{
+    height: 70px;
+    width: auto;
+    transition: all 0.6s ease;
+    padding-left: 20px;
+}
+
+.navbar-brand img:hover{
+    transition: all 0.6s ease;
+    transform: scale(1.2);
+}
+
+/*HEADER END*/
+
+.productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .producto{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 10px;
+    margin: 10px;
+    align-items: center;
+    text-align:  center;
+  }
+  .producto img{
+    width: 100%;
+  }
+  .producto span {
+    font-weight: bold;
+  
+  }
+
+  .editar{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .editar input {
+    padding: 5px 10px;
+    border: 1px solid;
+    border-radius: 5px;
+  }
+
+  .btn{
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: brown;
+    color: white;
+    cursor: pointer;
+  }
+  .formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 5px;
+    padding: 20px;
+    min-width: 250px;
+    max-width: 600px;
+    background-color: brown;
+    margin: 10px auto;
+    margin-top: 140px;
+  }
+  
+  .formulario input {
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+  }
+  .formulario button{
+    background-color: white;
+    color: black;
+  }
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+        justify-content: flex-end;
+    }
+    }
